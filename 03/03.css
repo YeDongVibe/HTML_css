@@ -1,0 +1,26 @@
+article {
+    background-color: red;
+    color: whitesmoke;
+
+}
+
+#a2,#a1 {
+    background-color: orange;
+}
+
+h1 {
+    background-color: darkviolet;
+    color: white;
+}
+
+.c4 {
+    background-color: aquamarine;
+}
+
+.c3>h1 {
+    color: rgb(245, 6, 245)
+}
+
+.c3>ul>li {
+    color: darkblue;
+}

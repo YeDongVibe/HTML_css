@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--HTML5 문서임을 알려줌-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>K-digital 3기 이예진</title>
+    <!--<style>
+        article {
+            background-color: red;
+            color : whitesmoke;
+
+        }
+        #a2,#a1 {
+            background-color: orange;
+        }
+        h1 {
+            background-color: darkviolet;
+            color: white;
+        }
+        .c4 {
+            background-color: aquamarine;
+        }
+        .c3 > h1 {
+            color : pink
+        }
+
+        .c3 > ul > li {
+            color : darkblue;
+        } 
+        /*=  .c3 li */
+    </style>-->
+    <link rel="stylesheet" type="text/css" href="./03.css">
+</head>
+
+<body>
+    <header> <!--(시멘틱테그)구조잡기: 헤더영역-->
+        <nav> <!--메뉴영역 만들기-->
+            <ul>
+                <li><a href = "#a2">개인정보</a></li> <!--#name : name에 해당되는 id로 찾아감--> 
+                <Li><a href = "#a3">학력사항</a></Li>
+                <li><a href = "#a4">자격증</a></li>
+                <li><a href = "#a5">사용가능 언어</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!--(시멘틱테그)구조잡기 : 메인영역-->
+        <ariticle id="a1" class = "c1"> <!--class: 클래스 지정-->
+            <div>
+                <img src="../img/cat.jpg" width="200px" />
+                <!--img테그 이용후 범주안에서 '/>'를 쳐주는 습관 기르기-->
+                <!-- width = "N%" 으로 사이즈 조절가능(브라우져 크기가 기준이 된다)-->
+            </div>
+            <!--div테그로 감싸면 영역이 지정되어 아래의 내용이 다음 줄로 표시된다-->
+        </ariticle>
+
+        <article id="a2" class = "c2"> <!--Id속성 : article에서 중복되지 않도록 클릭할 시 해당 영역(내용)으로 이동함.-->
+            <h1 style = "background-color: red;">개인정보</h1> <!--h1: 제목테그-->
+            <ul> <!--ul : 묶음테그 (그룹지정)-->
+                <li>이예진</li>
+                <li>010-****-****</li>
+                <li>부산시 <span style = "background-color: rgb(190, 166, 211);">금정구</span> 부곡동</li>
+                <li>부산대학교소프트웨어교육센터</li>
+                <!--li : 문장부호를 이용하여 리스트업 함.-->
+            </ul>
+        </article>
+
+        <article id="a3" class = "c3">
+            <h1>학력사항</h1>
+            <ul>
+                <li>2022-2023 고등학교</li>
+                <li>2022-2022 대학교</li>
+            </ul>
+        </article>
+
+        <article id="a4" class = "c4">
+            <h1>자격증</h1>
+            <ul>
+                <li>2022-2023 고등학교</li>
+                <li>2022-2022 대학교</li>
+            </ul>
+        </article>
+
+        <article id="a5" class = "c5">
+            <h1>사용가능언어</h1>
+            <ul>
+                <li> HTML/CSS/JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+            </ul>
+        </article>
+    </main>
+
+    <fotter> <!--(시멘틱테그)영역잡기 : 푸터 영역-->
+
+    </fotter>
+</body>
+
+</html>
