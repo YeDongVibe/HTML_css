@@ -30,7 +30,15 @@
             color : darkblue;
         } 
         /*=  .c3 li */
+        /* main>h1~a : h1과 동일선상에 잇는 형제들 (a)를 찾아 적용.
     </style>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" type="text/css" href="./03.css">
 </head>
 
@@ -38,16 +46,24 @@
     <header> <!--(시멘틱테그)구조잡기: 헤더영역-->
         <nav> <!--메뉴영역 만들기-->
             <ul>
-                <li><a href = "#a2">개인정보</a></li> <!--#name : name에 해당되는 id로 찾아감--> 
-                <Li><a href = "#a3">학력사항</a></Li>
-                <li><a href = "#a4">자격증</a></li>
-                <li><a href = "#a5">사용가능 언어</a></li>
+                <li>
+                    <span class="material-symbols-outlined"> <!--아이콘 집어넣기-->
+                        home
+                    </span>
+
+                    <a href="#a2">개인정보</a>
+                </li> <!--#name : name에 해당되는 id로 찾아감-->
+                <Li><span class="material-symbols-outlined">
+                        favorite
+                    </span><a href="#a3">학력사항</a></Li>
+                <li><a href="#a4">자격증</a></li>
+                <li><a href="#a5">사용가능 언어</a></li>
             </ul>
         </nav>
     </header>
 
     <main> <!--(시멘틱테그)구조잡기 : 메인영역-->
-        <ariticle id="a1" class = "c1"> <!--class: 클래스 지정-->
+        <ariticle id="a1" class="c1"> <!--class: 클래스 지정-->
             <div>
                 <img src="../img/cat.jpg" width="200px" />
                 <!--img테그 이용후 범주안에서 '/>'를 쳐주는 습관 기르기-->
@@ -65,7 +81,7 @@
             <!--div테그로 감싸면 영역이 지정되어 아래의 내용이 다음 줄로 표시된다-->
         </ariticle>
 
-        <article id="a2" class = "c2"> <!--Id속성 : article에서 중복되지 않도록 클릭할 시 해당 영역(내용)으로 이동함.-->
+        <article id="a2" class="c2"> <!--Id속성 : article에서 중복되지 않도록 클릭할 시 해당 영역(내용)으로 이동함.-->
             <h1>개인정보</h1> <!--h1: 제목테그-->
             <!-- <h1 style = "background-color: red;"></h1> -->
             <ul> <!--ul : 묶음테그 (그룹지정)-->
@@ -77,7 +93,7 @@
             </ul>
         </article>
 
-        <article id="a3" class = "c3">
+        <article id="a3" class="c3">
             <h1>학력사항</h1>
             <ul>
                 <li>2022-2023 대왕 냥 고등학교</li>
@@ -85,7 +101,7 @@
             </ul>
         </article>
 
-        <article id="a4" class = "c4">
+        <article id="a4" class="c4">
             <h1>자격증</h1>
             <ul>
                 <li>2022-2023 애교스킬</li>
@@ -93,7 +109,7 @@
             </ul>
         </article>
 
-        <article id="a5" class = "c5">
+        <article id="a5" class="c5">
             <h1>사용가능언어</h1>
             <ul>
                 <li>HTML/CSS/JavaScript</li>

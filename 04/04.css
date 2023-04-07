@@ -1,0 +1,39 @@
+h1 {
+    border : 3px dashed white;
+    border-collapse: separate;
+    padding : 11px;
+}
+
+hgroup>h2 {
+    text-decoration: underline;
+
+}
+
+nav {
+    border : 1px solid white;
+    padding : 10px;
+}
+
+main h2 {
+    border : 1px solid white;
+    text-align: center;
+    padding : 11px;
+}
+
+main p {
+    border : 1px solid white;
+    padding : 11px;
+}
+
+.d1, .d2, .d3, .d4 {
+    display: flex;
+}
+
+.i1, .i2, .i3, .i4 {
+    width : 700px;
+    margin : 10px;
+}
+
+.W1 {
+    margin : 10px;
+}
